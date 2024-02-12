@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+
+.profile{
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    font-size: 7vh;
+    background-color: grey;
+    color: white;
+}
+
+.profile dt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img{
+    margin: 2vh 0vw 2vh 7vw;
+    width: 11vw;
+    border-radius: 50%;
+}
+
+
+
+.person-info{
+    background-color: rgb(88, 88, 88);
+    color: white;
+    width: 18vw;
+}
