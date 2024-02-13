@@ -27,26 +27,11 @@
 
             <dl class="person-info-list"> <!--description list-->
                 <div class="person-info">
-                    <dt>Om mig</dt>
-                    <dd> <!--Defines a description in a description list-->
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum 
-                        tellus pellentesque eu tincidunt tortor. Volutpat lacus laoreet non curabitur 
-                        gravida arcu ac tortor. Nascetur ridiculus mus mauris vitae ultricies leo 
-                        integer malesuada. Nisl purus in mollis nunc sed id semper. Blandit turpis 
-                        cursus in hac habitasse platea. Diam sollicitudin tempor id eu nisl nunc mi. 
-                        Consectetur adipiscing elit pellentesque habitant morbi. Turpis egestas integer 
-                        eget aliquet nibh praesent tristique magna sit. Vulputate ut pharetra sit amet 
-                        aliquam id diam. Maecenas pharetra convallis posuere morbi leo urna. Vitae elementum 
-                        curabitur vitae nunc.
-                    </dd>
-                </div>
-                <div class="person-info">
                     <dt>Personuppgifter</dt>
                     <ul>
-                        <li>2006/12/11</li>
                         <li>Kvinna</li>
                         <li>Vidagatan 5</li>
+                        <li>2006/12/11</li>
                     </ul>
                 </div>
                 <div class="person-info">
@@ -54,6 +39,7 @@
                     <ul>
                         <li>0760-98-64-60</li>
                         <li>evelina.carlsson@elev.ga.lbs.se</li>
+                        <a href="https://github.com/Evenelly"><li>Github</li></a>
                     </ul>
                 </div>
                 <div class="person-info">
@@ -70,29 +56,70 @@
 
             <div class="huvud-info-list">
                 <dl class="huvud-info">
+                    <dt>Om mig</dt>
+                    <dd> <!--Defines a description in a description list-->
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum 
+                        tellus pellentesque eu tincidunt tortor. Volutpat lacus laoreet non curabitur 
+                        gravida arcu ac tortor. Nascetur ridiculus mus mauris vitae ultricies leo 
+                        integer malesuada. Nisl purus in mollis nunc sed id semper. Blandit turpis 
+                        cursus in hac habitasse platea. Diam sollicitudin tempor id eu nisl nunc mi. 
+                        Consectetur adipiscing elit pellentesque habitant morbi. Turpis egestas integer 
+                        eget aliquet nibh praesent tristique magna sit. Vulputate ut pharetra sit amet 
+                        aliquam id diam. Maecenas pharetra convallis posuere morbi leo urna. Vitae elementum 
+                        curabitur vitae nunc.
+                    </dd>
+                    <dl class="huvud-info">
+                        <dt>Erfarenheter</dt>
+                        <dd onclick="changeArrow('hobby')">
+                            <svg id="hobby-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path id="hobby-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            Växjö kommun
+                        </dd>
+                        <dd class="details" id="hobby"> <!--Gömd text-->
+                            <li>
+                                Jag har sommarjobbat hos växjö kommun, sommaren 2023. På detta arbete jobbade jag i grupp för att hålla staden ren och fin. Arbetet var fysisk krävande 
+                                och vissade oss diciplin genom att börja jobba tidigt på morgonen och sluta sent. 
+                            </li>
+                        </dd>
+                        <dd onclick="changeArrow('hobby')">
+                            <svg id="hobby-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path id="hobby-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                            </svg>
+                            SAAB
+                        </dd>
+                        <dd class="details" id="hobby"> <!--Gömd text-->
+                            <li>
+                                Jag har inte arbetat inom saab än, men jag kommer förhoppningsvis få ett arbete under sommaren som handlar fokuserar på programmering. 
+                            </li>
+                        </dd>
+                    </dl>
+
+
                     <dt>Utbildning</dt>
-                    <dd onclick="grundskola()">
+                    <dd onclick="changeArrow('grundskola')">
                         <svg id="grundskola-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                             <path id="grundskola-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
                         </svg> 
                         Grundskola
                     </dd>
 
-                    <dd class="details" id="grundskola"> 
-                        <li>Ulriksbergskolan från 2012 till 2014</li>
-                        <li>Ringsbergskolan från 2014 till 2022</li>
+                    <dd class="details" id="grundskola"> <!--Gömd text-->
+                        <li><a href="https://www.vaxjo.se/sidor/forskola-och-skola/skola-6---16-ar/grundskolor/skolor-r-u/ulriksbergskolan.html">Ulriksbergskolan</a> från 2012 till 2014</li>
+                        <li><a href="https://www.vaxjo.se/sidor/forskola-och-skola/skola-6---16-ar/grundskolor/skolor-r-u/ringsbergskolan.html">Ringsbergskolan</a> från 2014 till 2022</li>
                     </dd>
 
 
-                    <dd onclick="gymnasium()">
+                    <dd onclick="changeArrow('gymnasium')">
                         <svg id="gymnasium-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                             <path id="gymnasium-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
                         </svg>
                         Gymnasium
                     </dd>
 
-                    <dd class="details" id="gymnasium"> 
-                        <li>Ljud och bild skola från 2022 till 2025 (pågående)</li>
+                    <dd class="details" id="gymnasium"> <!--Gömd text-->
+                        <li><a href="https://lbs.se/vaxjo/">Ljud och bild skola</a> från 2022 till 2025 (pågående)</li>
                     </dd>
                 </dl>
 
@@ -101,50 +128,105 @@
 
                 <dl class="huvud-info">
                     <dt>Programeringspråk</dt>
-                    <dd onclick="HTML()">
+                    <dd onclick="changeArrow('HTML')">
                         <svg id="HTML-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                             <path id="HTML-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
                         </svg>
                         HTML
                     </dd>
-                    <dd class="details" id="HTML"> 
-                        <li>Jag har programmerat i HTML förr och har skapat denna hemsidan/CV med hjälp av, HTML, CSS och JAVASCRIPT.</li>
+                    <dd class="details" id="HTML"> <!--Gömd text-->
+                        <li>
+                            Jag har programmerat i HTML förr och har skapat denna hemsidan/CV med hjälp av, HTML, CSS och JAVASCRIPT. Jag kan HTML på en en grundläggande nivå
+                            då jag har skapat olika hemsidor och appar tidigare med hjälp av HTML. Jag har använt mig av visual studo code av Adobe för att skapa mina projekt.
+                        </li>
                     </dd>
 
 
-                    <dd>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    <dd onclick="changeArrow('CSHARP')">
+                        <svg id="CSHARP-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                            <path id="CSHARP-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
                         </svg>
                         C#
                     </dd>
-                    <dd>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    <dd class="details" id="CSHARP"> <!--Gömd text-->
+                        <li>
+                            Jag känner mig mest bekväm med C# då jag har programerat väldigt många olika program under min gymnasium gång. Jag har använt mig av visual studio för
+                            programmera mina projekt. 
+                        </li>
+                    </dd>
+
+
+                    <dd onclick="changeArrow('CSS')">
+                        <svg id="CSS-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                            <path id="CSS-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
                         </svg>
                         CSS
                     </dd>
+                    <dd class="details" id="CSS"> <!--Gömd text-->
+                        <li>
+                            I kombination med HTML har jag jobbat med CSS för att struktuera hemsidan. Jag har också kunskap inom färgteman och liknanade då jag har gått en 
+                            gränssnittdesigns kurs under år 1 av gymnasiumet. Jag har använt mig av visual studio code för att programmera i CSS. 
+                        </li>
+                    </dd>
+                    <dd onclick="changeArrow('JAVASCRIPT')">
+                        <svg id="JAVASCRIPT-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                            <path id="JAVASCRIPT-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                        </svg>
+                        JAVASCRIPT
+                    </dd>
+                    <dd class="details" id="JAVASCRIPT"> <!--Gömd text-->
+                        <li>
+                            JAVASCRIPT är mitt nyaste program som jag har lärt mig. JAVASCRIPT är fortfarande ett program som jag håller på att lära mig de grundläggande 
+                            funktionerna, men jag har skapat denna hemsida med hjäl pav både HTML, CSS och JAVASCRIPT. 
+                        </li>
+                    </dd>
                 </dl>
+
+
 
                 <dl class="huvud-info">
                     <dt>Projekt</dt>
-                    <dd>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    <dd onclick="changeArrow('projekt1')">
+                        <svg id="projekt1-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                            <path id="projekt1-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
                         </svg>
                         HTML/CSS
                     </dd>
-                    <dd>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    <dd class="details" id="projekt1"> <!--Gömd text-->
+                        <a href="https://github.com/Evenelly/Blogg-sida"><li>Bloggsida</li></a>
+                        <a href="https://github.com/Evenelly/Film-sida"><li>Filmsida</li></a>
+                        <a href="https://github.com/HaggeKagge/LBS-Sida-Rework"><li>LBS-Reworksida (grupparbete)</li></a>
+                    </dd>
+                    <dd onclick="changeArrow('projekt2')">
+                        <svg id="projekt2-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                            <path id="projekt2-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
                         </svg>
                         C#
+                    </dd>
+                    <dd class="details" id="projekt2"> <!--Gömd text-->
+                        <li>Lotto</li>
+                        <li>Meny</li>
+                        <li>Fibonacci</li>
+                        <li>Bank</li>
+                        <li>Primtal</li>
+                        <li>Sten, sack, påse</li>
+                        <li>Temperatur converter</li>
                     </dd>
                 </dl>
 
                 <dl class="huvud-info">
                     <dt>Hobby</dt>
-                    <dd></dd>
+                    <dd onclick="changeArrow('hobby')">
+                        <svg id="hobby-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                            <path id="hobby-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                        </svg>
+                        Lärande av nya tekniker 
+                    </dd>
+                    <dd class="details" id="hobby"> <!--Gömd text-->
+                        <li>
+                            Jag håller mig uppdaterad med de senaste trenderna och teknologierna inom app- och webbutveckling genom att spendera tid på att läsa bloggar, titta på tutorials och prova nya verktyg
+                        </li>
+                    </dd>
                 </dl>
 
             </div>
