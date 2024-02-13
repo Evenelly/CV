@@ -4,11 +4,13 @@ body{
 
 .profile{
     margin-top: 4vh;
+    width: 100%;
     display: flex;
     align-items: center;
     font-size: 7vh;
     background-color: grey;
     color: white;
+    position: absolute;
 }
 
 .profile dt{
@@ -18,15 +20,54 @@ body{
 }
 
 .profile img{
-    margin: 2vh 0vw 2vh 7vw;
-    width: 11vw;
+    margin: 2vh 0vw 2vh 6vw;
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
 
 
-.person-info{
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.person-info-list{
     background-color: rgb(88, 88, 88);
+    margin: 0;
+    margin-left: 3vw;
     color: white;
-    width: 18vw;
+    width: 16vw;
+    padding: 38vh 2vw 2vh;
+}
+
+.person-info{
+    margin-bottom: 5vh;
+}
+
+
+.huvud-info-list{
+    margin-top: 37vh;
+    width: 100%;
+}
+
+.huvud-info dt{
+    padding: 2vh 0;
+    border-top: solid 2px grey;
+    border-bottom: solid 2px grey;
+    margin: 0vh 5vw;
+    font-size: 20px;
+}
+
+.huvud-info dd{
+    margin: 2vh 6.5vw;
+}
+
+.huvud-info .details{
+    margin-left: 10vw;
 }
