@@ -228,7 +228,3 @@ button{
     margin-right: 0.2vw;
     text-align: center;
 }
-
-.kurser-arrow:hover #växjö-img{
-    mask-image: linear-gradient(to top, transparent, rgb(0, 0, 0) 100%);
-}
