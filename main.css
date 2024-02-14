@@ -7,12 +7,11 @@ a{
 }
 
 .profile{
-    margin-top: 4vh;
     width: 100%;
     display: flex;
     align-items: center;
     font-size: 7vh;
-    background-color: grey;
+    background-color: rgb(80, 80, 80);
     color: white;
     position: absolute;
 }
@@ -24,29 +23,29 @@ a{
 }
 
 .profile img{
-    margin: 2vh 0vw 2vh 6vw;
-    width: 200px;
-    height: 160px;
+    margin: 3vh 0vw 3vh 7vw;
+    width: 14vw;
+    height: 23vh;
     object-fit: cover;
     border-radius: 50%;
 }
 
 
 
+/*main.html*/
 
-main{
+#main{
     display: flex;
     flex-direction: row;
 }
 
 
 .person-info-list{
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(50, 50, 50);
     margin: 0;
-    margin-left: 3vw;
     color: white;
     width: 16vw;
-    padding: 38vh 2vw 2vh;
+    padding: 38vh 5vw 2vh;
 }
 
 .person-info{
@@ -54,11 +53,18 @@ main{
     overflow: hidden;
 }
 
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4vh;
+}
+
 
 
 
 .huvud-info-list{
-    margin-top: 37vh;
+    margin: 37vh 0vw 20vh;
     width: 100%;
 }
 
@@ -76,4 +82,153 @@ main{
 
 .huvud-info .details{
     margin-left: 10vw;
+}
+
+button{
+    margin-top: 2vh;
+}
+
+
+
+
+
+@media(max-width: 950px){
+
+    .person-info-list{
+        margin-left: 0;
+        width: auto;
+        padding: 25vh 5vw 2vh;
+        z-index: 1;
+    }
+
+    .profile dt{
+        font-size: 4vh;
+    }
+
+    .profile img{
+        width: 20vw;
+        height: 12vh;
+        z-index: 2;
+    }
+
+    .huvud-info-list{
+        margin-top: 22vh;
+    }
+}
+
+@media(max-width: 730px){
+    
+    .profile{
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .huvud-info-list{
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+    }
+
+    .person-info-list{
+        order: 2;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5vh 3vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+@media(max-width: 500px){
+
+    .person-info-list{
+        flex-direction: column;
+    }
+
+    .profile{
+        margin-right: 50vw;
+        justify-content: space-evenly;
+    }
+
+    .profile img{
+        height: 15vh;
+        width: 23vw;
+    }
+
+    .profile dt{
+        font-size: 25px;
+        width: 60vw;
+    }
+
+    .huvud-info-list{
+        margin-top: 20vh;
+    }
+
+
+}
+
+/*courses.html*/
+
+.header{
+    margin: 0;
+    background-color: rgb(80, 80, 80);
+    padding: 2vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.header dt{
+    width: 100%;
+    margin-right: 22.23px;
+}
+
+.header dt p{
+    margin: 0;
+    font-size: 6vh;
+    text-align: center;
+}
+
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#växjö-img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    mask-image: linear-gradient(to top, transparent, rgb(0, 0, 0) 75%);
+}
+
+#intro-text{
+    position: absolute;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+.kurser-arrow{
+    position: absolute;
+    top: 70vh;
+    color: white;
+}
+.kurser-arrow p{
+    text-decoration: none;
+    font-size: 2vh;
+    margin: 0;
+    margin-right: 0.2vw;
+    text-align: center;
+}
+
+.kurser-arrow:hover #växjö-img{
+    mask-image: linear-gradient(to top, transparent, rgb(0, 0, 0) 100%);
 }
