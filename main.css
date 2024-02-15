@@ -109,7 +109,7 @@ button{
     }
 
     .profile dt{
-        margin-left: 10vw;
+        margin-left: 30vw;
         font-size: 4vh;
     }
 
@@ -159,6 +159,11 @@ button{
         object-fit: cover;
         border-radius: 50%;
     }
+
+    .profile dt{
+        margin-left: 0;
+    }
+
 }
 
 @media(max-width: 500px){
@@ -180,6 +185,10 @@ button{
     .profile dt{
         font-size: 25px;
         width: 60vw;
+    }
+
+    .huvud-info-list{
+        margin-top: 10vh;
     }
 
 }
