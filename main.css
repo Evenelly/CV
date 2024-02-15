@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: Georgia, serif;
 }
 
 a{
@@ -51,7 +52,7 @@ a{
     margin: 0;
     color: white;
     width: 16vw;
-    padding: 38vh 5vw 2vh;
+    padding: 30vh 5vw 2vh;
 }
 
 .person-info{
@@ -70,7 +71,7 @@ a{
 
 
 .huvud-info-list{
-    margin: 37vh 0vw 20vh;
+    margin: 27vh 0vw 20vh;
     width: 100%;
 }
 
@@ -103,11 +104,12 @@ button{
     .person-info-list{
         margin-left: 0;
         width: auto;
-        padding: 22vh 2vw 2vh;
+        padding: 10vh 2vw 2vh;
         z-index: 1;
     }
 
     .profile dt{
+        margin-left: 10vw;
         font-size: 4vh;
     }
 
@@ -118,7 +120,7 @@ button{
     }
 
     .huvud-info-list{
-        margin-top: 22vh;
+        margin-top: 18vh;
     }
 }
 
@@ -136,7 +138,7 @@ button{
     }
 
     .huvud-info-list{
-        margin-top: 20vh;
+        margin-top: 15vh;
         margin-bottom: 10vh;
     }
 
@@ -179,11 +181,6 @@ button{
         font-size: 25px;
         width: 60vw;
     }
-
-    .huvud-info-list{
-        margin-top: 22vh;
-    }
-
 
 }
 
