@@ -30,7 +30,7 @@ var arrowHover = document.getElementsByClassName('kurser-arrow');
 
 for (var i = 0; i < arrowHover.length; i++) { //eftersom att det är en klass måste jag loopa genom den för att beröra alla element med denna klass.
     arrowHover[i].addEventListener("mouseover", () => {
-        ChangeImg.style.maskImage = 'linear-gradient(to top, transparent 5vh, rgb(0, 0, 0) 100%)';
+        ChangeImg.style.maskImage = 'linear-gradient(to top, transparent 7vh, rgb(0, 0, 0) 100%)';
     });
     
     arrowHover[i].addEventListener("mouseout", () => {
