@@ -22,8 +22,9 @@
                 <div id="intro-text">
                     <h2>LBS - KURSER</h2>
                     <p> 
-                        Jag studerar på Ljud och Bild skolan i växjö. Jag går teknik-programmet med inriktningen app och webbutveckling. Dennna skola har
-                        lärt mig allt jag kan om C#, CSS, HTML och JavaScript.
+                        Jag studerar på Ljud och Bild skolan i Växjö. Jag går teknikprogrammet med inriktningen Informations- och medieteknik (App och webbutveckling).
+                        Eftersom att jag läser teknikprogrammet på gymnasiet så läser jag det grundläggande kurserna för högskoleförberedande program samt det andra som
+                        jag nämner vid "Kurser".
                     </p>
                 </div>
                 <div class="kurser-arrow"> 
@@ -35,19 +36,117 @@
                     </a>
                 </div> 
             </div>
-        <main id="kurser">
-            <h1>Kurser</h1>
-            <ul>
-                Programinrikdate kurser
-                <li>Dator och nätverksteknik</li>
-                <li>Programmering 1</li>
-                <li>Programmering 2</li>
-                <li>Webbutveckling 1</li>
-                <li>Webbutveckling 2</li>
-                <li>Webbserverprogrammering</li>
-                <li>Gränssnittdesign</li>
-            </ul>
 
+
+
+        <main id="kurser">
+            <h2>Teknikprogrammet</h2>
+
+            <dl class="huvud-info">
+                <dt>Program inriktningar</dt>
+                <dd onclick="changeArrow('DON')">
+                    <svg id="DON-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="DON-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Dator och nätverksteknik
+                </dd>
+                <dd class="details" id="DON"> <!--Gömd text-->
+                    <li>Startdatum: 2023-08-17</li>
+                    <li>Slutdatum: 2024-06-13</li>
+                </dd>
+
+                <dd onclick="changeArrow('pro1')">
+                    <svg id="pro1-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="pro1-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Programmering 1
+                </dd>
+                <dd class="details" id="pro1"> <!--Gömd text-->
+                    <li>Startdatum: 2023-08-17</li>
+                    <li>Slutdatum: 2024-06-13</li>
+                </dd>
+
+                <dd onclick="changeArrow('pro2')">
+                    <svg id="pro2-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="pro2-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Programmering 2
+                </dd>
+                <dd class="details" id="pro2"> <!--Gömd text-->
+                    <li>Startdatum: 2024-08-15</li>
+                    <li>Slutdatum: 2025-06-01</li>
+                </dd>
+
+                <dd onclick="changeArrow('wu1')">
+                    <svg id="wu1-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="wu1-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Webbutveckling 1
+                </dd>
+                <dd class="details" id="wu1"> <!--Gömd text-->
+                    <li>Startdatum: 2023-08-17</li>
+                    <li>Slutdatum: 2024-06-13</li>
+                </dd>
+
+                <dd onclick="changeArrow('wu2')">
+                    <svg id="wu2-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="wu2-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Webbutveckling 2
+                </dd>
+                <dd class="details" id="wu2"> <!--Gömd text-->
+                    <li>Startdatum: 2024-08-15</li>
+                    <li>Slutdatum: 2025-06-01</li>
+                </dd>
+
+                <dd onclick="changeArrow('wsp')">
+                    <svg id="wsp-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="wsp-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Webbserverprogrammering
+                </dd>
+                <dd class="details" id="wsp"> <!--Gömd text-->
+                    <li>Startdatum: 2024-08-15</li>
+                    <li>Slutdatum: 2025-06-01</li>
+                </dd>
+
+                <dd onclick="changeArrow('gsd')">
+                    <svg id="gsd-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="gsd-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Gränssnittdesign
+                </dd>
+                <dd class="details" id="gsd"> <!--Gömd text-->
+                    <li>Startdatum: 2022-08-17</li>
+                    <li>Slutdatum: 2023-06-16</li>
+                </dd>
+            </dl>
+
+            <dl class="huvud-info">
+                <dt>Individuella val</dt>
+                <dd onclick="changeArrow('eng')">
+                    <svg id="eng-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="eng-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Engelska 7
+                </dd>
+                <dd class="details" id="eng"> <!--Gömd text-->
+                    <li>Startdatum: 2024-08-15</li>
+                    <li>Slutdatum: 2025-06-01</li>
+                </dd>
+                <dd onclick="changeArrow('mate')">
+                    <svg id="mate-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path id="mate-path" fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    Matematik 4C
+                </dd>
+                <dd class="details" id="mate"> <!--Gömd text-->
+                    <li>Startdatum: 2024-08-15</li>
+                    <li>Slutdatum: 2025-06-01</li>
+                </dd>
+
+            </dl>
+    
         </main>
 
 

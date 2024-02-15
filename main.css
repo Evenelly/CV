@@ -4,7 +4,15 @@ body{
 
 a{
     color: inherit;
+    text-decoration: none;
 }
+
+.links{
+    text-decoration: underline;
+}
+
+
+/*main.html*/
 
 .profile{
     width: 100%;
@@ -31,8 +39,6 @@ a{
 }
 
 
-
-/*main.html*/
 
 #main{
     display: flex;
@@ -173,6 +179,8 @@ button{
 
 }
 
+
+
 /*courses.html*/
 
 .header{
@@ -182,6 +190,7 @@ button{
     color: white;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .header dt{
@@ -206,8 +215,9 @@ button{
     width: 100%;
     height: 70vh;
     object-fit: cover;
-    mask-image: linear-gradient(to top, transparent, rgb(0, 0, 0) 75%);
+    mask-image: linear-gradient(to top, transparent, rgb(0, 0, 0) 100%);
 }
+
 
 #intro-text{
     position: absolute;
@@ -221,10 +231,31 @@ button{
     top: 70vh;
     color: white;
 }
+
 .kurser-arrow p{
-    text-decoration: none;
     font-size: 2vh;
     margin: 0;
     margin-right: 0.2vw;
     text-align: center;
+}
+
+#kurser{
+    margin: 10vh 8vw;
+}
+
+#kurser h2{
+    margin: 6vh 5vw;
+}
+
+
+@media(max-width: 400px){
+    #växjö-img{
+        height: 90vh;
+    }
+    .kurser-arrow{
+        top: 90vh;
+    }
+    #intro-text{
+        margin-bottom: 16vh;
+    }
 }
