@@ -62,7 +62,6 @@ a{
 
 .person-info{
     margin-bottom: 5vh;
-    overflow: hidden;
 }
 
 .icons{
@@ -234,12 +233,19 @@ button{
     position: absolute;
     top: 73vh;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kurser-arrow:hover{
+    cursor:pointer;
 }
 
 .kurser-arrow p{
     font-size: 2vh;
     margin: 0;
-    margin-right: 0.2vw;
     text-align: center;
 }
 

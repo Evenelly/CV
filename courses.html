@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-        <title>Evelina Carlsson - Courses</title>
+        <title>Evelina Carlsson - Kurser</title>
     </head>
 
     <body>
@@ -27,13 +27,11 @@
                         jag nämner vid "Kurser".
                     </p>
                 </div>
-                <div class="kurser-arrow"> 
-                    <a href="#kurser">
-                        <p>Kurser</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
-                        </svg>
-                    </a>
+                <div class="kurser-arrow" onclick="scrollToSection('kurser')"> 
+                    <p>Kurser</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                    </svg>
                 </div> 
             </div>
 
@@ -126,7 +124,7 @@
                     <li>Slutdatum: 2025-06-01</li>
                     <li>Slutdatum: 2024-06-13</li>
                     <li>Ämnets syfte:</li>
-                    <li>Syftet är den samma som Webbutveckling 1, dock mer fördjupande.</li>
+                    <li class="syfte">Syftet är den samma som Webbutveckling 1, dock mer fördjupande.</li>
                 </dd>
 
                 <dd onclick="changeArrow('wsp')">
