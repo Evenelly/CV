@@ -150,12 +150,8 @@ button{
 
     .person-info-list{
         order: 2;
-        width: 100%;
         box-sizing: border-box;
         padding: 5vh 3vw;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
     }
 
     .profile dt{
