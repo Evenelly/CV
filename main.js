@@ -41,7 +41,7 @@ for (var i = 0; i < arrowHover.length; i++) { //eftersom att det är en klass m�
 
 
 
-function scrollToSection(id) { //scroll (smoothly), jag skulle göra scrollning bara i html men för att göra det smooth så blir det js, dock funkar det inte? 
+function scrollToSection(id) { //scroll (smoothly), jag skulle göra scrollning bara i html men för att göra det smooth så blir det js. 
     var section = document.getElementById(id);
     var offsetTop = section.offsetTop;
 
