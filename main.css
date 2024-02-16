@@ -55,9 +55,7 @@ a{
     background-color: rgb(50, 50, 50);
     margin: 0;
     color: white;
-    width: 16vw;
     padding: 10vh 5vw 2vh;
-    z-index: 1;
 }
 
 .person-info{
@@ -76,7 +74,6 @@ a{
 
 .huvud-info-list{
     margin: 6vh 0vw 20vh;
-    width: 100%;
 }
 
 .huvud-info dt{
